@@ -24,6 +24,7 @@ namespace DecodeMessage
             }
             var head = ConvertToWord(wordStr, ciferText[0]);
             var tail = DecipherText(wordStr, ciferText.Substring(1));
+            
             result.AddRange(AddHeadToTail(head, tail));
             return result;
         }
